@@ -1,4 +1,4 @@
-# chaus-portfolio
+# Sohel Chaus - Portfolio Website
 Welcome to my personal portfolio website! 🚀  
 This site showcases my work, skills, and projects, designed for professional and creative presentation.  
 
