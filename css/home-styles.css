@@ -257,9 +257,9 @@ main {
     display: flex;
     justify-content: space-around;
     position: relative;
-    top: -140%;
+    top: -120%;
     left: -80%;
-    padding-top: 50px;
+    padding-top: 0.5rem;
 }
 .stat-box {
     text-align: center;
