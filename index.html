@@ -142,22 +142,15 @@
                 <div class="about-right">
                     <!-- TABS Notch Effect -->
                     <div class="tabs">
-                        <button class="tab-link active" onclick="openTab(event, 'myself')">Myself</button>
-                        <button class="tab-link" onclick="openTab(event, 'education')">Education</button>
+                        <button class="tab-link active" onclick="openTab(event, 'education')">Education</button>
                         <button class="tab-link" onclick="openTab(event, 'skills')">Skills</button>
                         <button class="tab-link" onclick="openTab(event, 'certification')">Certification</button>
                     </div>
         
                     <!-- TOTAL TABS -->
-                    <!-- 01 TAB - MYSELF -->
-                    <div class="tab-content active" id="myself">
-                        <h2>About Me</h2>
-                        <p>Hey! I'm Sohel Chaus, a passionate web developer & graphics designer exploring creativity & technology.</p>
-                        <a href="about.html"><button class="button">Know More</button></a>                          
-                    </div>
                     
-                    <!-- 02 TAB - EDUCATION -->
-                    <div class="tab-content" id="education">
+                    <!-- 01 TAB - EDUCATION -->
+                    <div class="tab-content active" id="education">
                         <h2>Education</h2>
                         <ul>
                             <li><strong>College:</strong> Yeshwant College of Information Technology (YCIT)</li>
@@ -167,7 +160,7 @@
                         </ul>
                     </div>
                     
-                    <!-- 03 TAB - SKILLS -->
+                    <!-- 02 TAB - SKILLS -->
                     <div class="tab-content" id="skills">
                         <h2>My Skills</h2>
                         <div class="skills-list">
@@ -195,15 +188,11 @@
                       </div>
                       
 
-                    <!-- 04 TAB - CERTIFICATION -->
+                    <!-- 02 TAB - CERTIFICATION -->
                     <div class="tab-content" id="certification">
                         <!-- navigation - previous or next -->
                         <div class="cert-header">
                             <h2>Certifications</h2>
-                            <div class="cert-nav">
-                                <button class="prev-btn" onclick="changeCertificate(-1)">❮ Previous</button>
-                                <button class="next-btn" onclick="changeCertificate(1)">Next ❯</button>
-                            </div>
                         </div>
                         <!-- ------------------------------------------------------------------------------- -->
                         <!-- Certification PAGE 01 -->
@@ -246,7 +235,11 @@
                         </div>
                         <!-- ----------------------------------------------------------------------------- -->
                          <!-- SO ON....................................................................... -->
-                        <h2 id="tab-image">Click To <span id="tab-image-part">Zoom</span></h2>
+                        <div class="cert-nav">
+                                <button class="prev-btn" onclick="changeCertificate(-1)">❮</button>
+                                <span id="page-indicator">Page 1 of 3</span>
+                                <button class="next-btn" onclick="changeCertificate(1)">❯</button>
+                        </div>
                     </div>
                 </div>
             </div>

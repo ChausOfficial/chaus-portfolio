@@ -73,7 +73,7 @@ nav ul li {
 }
 nav ul li a {
     color: white;
-    font-size: clamp(0.8rem, 1vw + 0.5rem, 1.5rem);
+    font-size: clamp(0.6rem, 0.8vw + 0.4rem, 1rem);
     padding: 0.5rem 1rem;
     border-radius: 5px;
     transition: background-color 0.3s, color 0.3s;
@@ -96,7 +96,7 @@ nav ul li a:active {
 .contact-button {
     background-color: #00FF1A;
     color: #1C1C1C;    
-    font-size: clamp(0.8rem, 1vw + 0.5rem, 1.5rem);
+    font-size: clamp(0.6rem, 0.8vw + 0.4rem, 1rem);
     border-radius: 5px;
     text-decoration: none;
     list-style-type: none;
@@ -475,10 +475,6 @@ main {
 }
 
 /* Background - Tab interface */
-#myself {
-    /* background: linear-gradient(135deg, #4CAF50 10%, #00C853 100%); */
-    background: #202020
-}
 #education {
     /* background: linear-gradient(135deg, #4CAF50 10%, #00C853 100%); */
     background: #202020
@@ -591,14 +587,14 @@ main {
 /* 02 Navigation BUTTON - Certification box */
 .cert-nav {
     display: flex;
-    gap: 10px; /* Adds spacing between buttons */
+    gap: 1rem; /* Adds spacing between buttons */
 }
 
 .prev-btn, .next-btn {
-    background: #00FF1A;
-    color: #1C1C1C;
+    background: #202020;
+    color: #fff;
     border: none;
-    padding: 8px 15px;
+    padding: 0.5rem 1rem;
     cursor: pointer;
     font-size: clamp(0.6rem, 0.8vw + 0.5rem, 1rem);
     border-radius: 5px;
@@ -606,7 +602,8 @@ main {
 }
 
 .prev-btn:hover, .next-btn:hover {
-    background: #00C853;
+        background: #00C853;
+
 }
 
 /* 03 Certification IMAGE - Certification box */

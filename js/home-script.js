@@ -80,20 +80,26 @@ function zoomImage(imgElement) {
     }
 }
 // Navigation Button - Certification
-let certIndex = 0;
+let currentPage = 1;
 const certBoxes = document.querySelectorAll(".certification-box");
+const totalPages = certBoxes.length;
 
 function changeCertificate(direction) {
-    certBoxes[certIndex].classList.remove("active"); // Hide current
+    currentPage += direction;
 
-    certIndex += direction;
+    // Keep page number within bounds
+    if (currentPage < 1) currentPage = 1;
+    if (currentPage > totalPages) currentPage = totalPages;
 
-    // Loop through certificates when reaching start/end
-    if (certIndex < 0) {
-        certIndex = certBoxes.length - 1;
-    } else if (certIndex >= certBoxes.length) {
-        certIndex = 0;
-    }
+    // Update real-time page indicator
+    document.getElementById("page-indicator").textContent = `Page ${currentPage} of ${totalPages}`;
 
-    certBoxes[certIndex].classList.add("active"); // Show next
+    // Show only the active certification
+    certBoxes.forEach((box, index) => {
+        box.style.display = index + 1 === currentPage ? "block" : "none";
+    });
 }
+
+// Initialize first page correctly
+changeCertificate(0);
+
