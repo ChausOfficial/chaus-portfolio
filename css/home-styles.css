@@ -546,6 +546,7 @@ main {
     background: #202020;
     color: white;
     display: none;
+    justify-content: space-between;
     align-items: center;
     text-align: center;
     position: relative;
@@ -587,7 +588,8 @@ main {
 /* 02 Navigation BUTTON - Certification box */
 .cert-nav {
     display: flex;
-    gap: 1rem; /* Adds spacing between buttons */
+    gap: 1rem;
+    margin-left: 1rem;
 }
 
 .prev-btn, .next-btn {
@@ -607,6 +609,12 @@ main {
 }
 
 /* 03 Certification IMAGE - Certification box */
+.cert-image {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    object-fit: cover;
+}
 .cert-image img {
     width: 200px;
     height: auto;
@@ -642,21 +650,28 @@ main {
 
 /* 04 Certification DETAIL'S - Certification box */
 .cert-details {
-    flex: 1;
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    text-align: left;    
+    margin-left: 18rem;
+    margin-top: -10rem;
+    width: 60%;
 }
 
 /* 05 Certification LINK - Certification box */
-.cert-details a {
+#cert-target {
     background-color: #1C1C1C;
     border: 1px solid white;
     color: white;
     display: inline-block;
-    padding: 8px 12px;
+    padding: 0.5rem 1rem;
     margin-top: 10px;
     border-radius: 5px;
     text-decoration: none;
+    width: 10rem;
 }
-.cert-details a:hover {
+#cert-target:hover {
     background-color: #00CC66;
     color: white;
     text-decoration: none;
