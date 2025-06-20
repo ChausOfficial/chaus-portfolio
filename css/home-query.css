@@ -1,16 +1,4 @@
 /* LARGE TABLET SCREEN */
 @media (max-width: 1024px) {
-    .profile-title {
-        font-size: 6rem;
-        top: 50%;
-        right: 15%;
-    }
-    .profile-image {
-        margin-top: -2rem;
-        margin-left: 2rem;
-    }
-    .profile-image img {
-        width: 80%;
-        height: auto;
-    }
+    
 }
