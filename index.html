@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
-    <link rel="website icon" type="png" href="images/profile_logo.png">
+    <link rel="website icon" type="png" href="images/profile-logo.png">
     <link rel="stylesheet" href="css/home-styles.css">
     <link rel="stylesheet" href="css/home-query.css">
     <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
@@ -17,20 +17,17 @@
     <!-- ======== HEADER SECTION ========= -->
     <!-- --------------------------------- -->
     <header>
-        <div class="logo-container">
-            <img src="images/profile_logo.png" alt="logo image" class="logo">
-            <h1><span id="header-title">PORT</span>folio</h1>
-        </div>
-
-        <nav class="navigation-bar">
+        <nav class="header-container">
+            <ul>
+                <img src="images/profile-logo.png" alt="logo image">
+                <h1><span id="header-title">PORT</span>Folio</h1>
+            </ul>
             <ul>
                 <li><a href="home.html">Home</a></li>
                 <li><a href="ervices.html">Services</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="portfolio.html">Portfolio</a></li>
             </ul>
-        </nav>
-        <nav>
             <ul>
                 <li><a href="contact.html" class="contact-button">Contact</a></li>
             </ul>
@@ -40,15 +37,19 @@
     <!-- --------------------------------- -->
     <!-- ========== MAIN SECTION ========= -->
     <!-- --------------------------------- -->
-    <main>
+    <main class="main-container">
         <section id="intro">
             <!-- left side -->
             <div class="social-container">
                 <div class="social-links">
-                    <a href="https://www.linkedin.com/in/chausofficial" target="_blank"> <img src="images/linkedin-in.svg" alt="linkedin icon"></a>
-                    <a href="https://www.instagram.com/chausofficial" target="_blank"><img src="images/instagram.svg" alt="instagram icon"></a>
-                    <a href="https://www.facebook.com/chausofficial" target="_blank"><img src="images/facebook.svg" alt="facebook icon"></a>
-                    <a href="https://www.youtube.com/@chausofficial" target="_blank"> <img src="images/youtube.svg" alt="youtube icon"></a>
+                    <a href="https://www.linkedin.com/in/chausofficial" target="_blank"> <img
+                            src="images/linkedin-in.svg" alt="linkedin icon"></a>
+                    <a href="https://www.instagram.com/chausofficial" target="_blank"><img src="images/instagram.svg"
+                            alt="instagram icon"></a>
+                    <a href="https://www.facebook.com/chausofficial" target="_blank"><img src="images/facebook.svg"
+                            alt="facebook icon"></a>
+                    <a href="https://www.youtube.com/@chausofficial" target="_blank"> <img src="images/youtube.svg"
+                            alt="youtube icon"></a>
                 </div>
                 <div class="social-info">
                     <h1 class="animated-text">Sohel Chaus</h1>
@@ -62,7 +63,7 @@
             <!-- right side -->
             <div class="profile-container">
                 <span class="profile-title">SOHEL</span>
-                <img src="images/profile_photo.svg" alt="profile image" class="profile-image">
+                <img src="images/profile-photo.svg" alt="profile image" class="profile-image">
             </div>
         </section>
         <!-- ------------------------ -->
@@ -90,12 +91,12 @@
             </div>
         </section>
         <!-- ------------------------ -->
-        
+
         <div class="services-title">
             <h2>Services</h2>
             <P>HOW CAN <span id="services-paragraph">I HELP YOU</span></P>
         </div>
-        
+
         <section id="services">
             <div class="services-container">
                 <div class="service-box">
@@ -135,112 +136,116 @@
             <div class="about-container">
                 <!-- Left Side - ABOUT CONTAINER -->
                 <div class="about-left">
-                    <img src="images/profile_photo.svg" alt="Sohel Chaus">
+                    <img src="images/profile-photo.svg" alt="Sohel Chaus">
                 </div>
 
                 <!-- Right Side - ABOUT CONTAINER -->
                 <div class="about-right">
-                    <!-- TABS Notch Effect -->
+                    <!------------->
+                    <!-- TAB BAR -->
+                    <!------------->
                     <div class="tabs">
                         <button class="tab-link active" onclick="openTab(event, 'education')">Education</button>
                         <button class="tab-link" onclick="openTab(event, 'skills')">Skills</button>
                         <button class="tab-link" onclick="openTab(event, 'certification')">Certification</button>
                     </div>
 
-                    <!-- TOTAL TABS -->
+                    <!----------------->
+                    <!-- TAB CONTENT -->
+                    <!----------------->
 
-                    <!-- 01 TAB - EDUCATION -->
+                    <!----------------------------->
+                    <!-- EDUCATION / TAB CONTENT -->
+                    <!----------------------------->
                     <div class="tab-content active" id="education">
                         <h2>Education</h2>
-                        <ul>
-                            <li><strong>College:</strong> Yeshwant College of Information Technology (YCIT)</li>
-                            <li><strong>Degree:</strong> Bachelor’s in Computer Applications (BCA)</li>
-                            <li><strong>Field of Study:</strong> Computer Science & IT Applications</li>
-                            <li><strong>Duration:</strong> 2023 - 2025</li>
+                        <div class="ed-container">
+                        <div class="ed-dt">
+                            <p><span>Degree:</span> Bachelor’s In Computer Applications (BCA)</p>
+                            <p><span>Field:</span> Computer Science</p>
+                            <p><span>College:</span> Yeshwant College of Information Technology (YCIT)</p>
+                            <p><span>Duration:</span> 2023-2025</p>
+                        </div>
+
+                        <div class="ed-bg">
+                            <img src="images/college-bg.jpg" alt="college image">
+                        </div>
+                        </div>
+                    </div>
+
+                    <!-- ----------------------->
+                    <!-- SKILLS / TAB CONTENT -->
+                    <!-- ----------------------->
+                    <div class="tab-content" id="skills">
+                        <h2>Skills</h2>
+                        <ul class="skills-list">
+                            <li><i class="fab fa-html5"></i><span>HTML</span></li>
+                            <li><i class="fab fa-js-square"></i><span>JS</span></li>
+                            <li><i class="fas fa-database"></i><span>MySQL</span></li>
+                            <li><i class="fab fa-css3-alt"></i><span>CSS</span></li>
+                            <li><i class="fas fa-paint-brush"></i><span>GFX</span></li>
                         </ul>
                     </div>
 
-                    <!-- 02 TAB - SKILLS -->
-                    <div class="tab-content" id="skills">
-                        <h2>My Skills</h2>
-                        <div class="skills-list">
-                            <div class="skill">
-                                <i class="fab fa-html5"></i>
-                                <span>HTML</span>
-                            </div>
-                            <div class="skill">
-                                <i class="fab fa-css3-alt"></i>
-                                <span>CSS</span>
-                            </div>
-                            <div class="skill">
-                                <i class="fab fa-js-square"></i>
-                                <span>JavaScript</span>
-                            </div>
-                            <div class="skill">
-                                <i class="fas fa-database"></i>
-                                <span>MySQL</span>
-                            </div>
-                            <div class="skill">
-                                <i class="fas fa-paint-brush"></i>
-                                <span>Graphics Design</span>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <!-- 02 TAB - CERTIFICATION -->
+                    <!--------------------------------->
+                    <!-- CERTIFICATION / TAB CONTENT -->
+                    <!--------------------------------->
                     <div class="tab-content" id="certification">
-                        <!-- navigation - previous or next -->
-                        <div class="cert-header">
-                            <h2>Certifications</h2>
-                        </div>
-                        <!-- ------------------------------------------------------------------------------- -->
-                        <!-- Certification PAGE 01 -->
+                        <h2>Certificates</h2>
+                        <div class="certification-container">
+
+                        <!-------------------->
+                        <!-- Certificate 01 -->
+                        <!-------------------->
                         <div class="certification-box active">
                             <div class="overlay"></div>
                             <div class="cert-image" onclick="zoomImage(this)">
-                                <img src="images/cert-webdesign.jpg" alt="Web Design Certificate">
-                            </div>
-                            <div class="cert-details">
+                                <img src="images/CFT-WebDesign.jpg" alt="Web Design Certificate">
+
+                                <div class="cert-details">
                                 <h3>Certified Web Designer</h3>
-                                <p>Recognition for expertise in modern web technologies, including HTML, CSS,
-                                    JavaScript, and responsive design.</p>
-                                <a href="https://certification-link.com" target="_blank" id="cert-target">Visit
-                                    Websites</a>
+                                <p>Recognition for expertise in modern web technologies, including HTML, CSS, JavaScript, and responsive design.</p>
+                                <a href="https://certification-link.com" target="_blank" id="cert-target">Visit Websites</a>
+                            </div>
                             </div>
                         </div>
-                        <!-- ----------------------------------------------------------------------------- -->
-                        <!-- Certification PAGE 02 -->
+
+                        <!-------------------->
+                        <!-- Certificate 02 -->
+                        <!-------------------->
+                        <div class="certification-box">
+                            <div class="overlay"></div>
+                            <div class="cert-image" onclick="zoomImage(this)">
+                                <img src="images/CFT-Eng.jpg" alt="Eng Course Certificate">
+
+                                <div class="cert-details">
+                                <h3>Certified Eng Learner</h3>
+                                <p>Recognition for expertise in modern web technologies, including HTML, CSS, JavaScript, and responsive design.</p>
+                                <a href="https://certification-link.com" target="_blank" id="cert-target">Visit Websites</a>
+                            </div>
+                            </div>  
+                        </div>
+
+                        <!-------------------->
+                        <!-- Certificate 03 -->
+                        <!-------------------->
                         <div class="certification-box">
                             <div class="overlay"></div>
                             <div class="cert-image" onclick="zoomImage(this)">
                                 <img src="images/cert-eng.jpg" alt="Eng Course Certificate">
-                            </div>
-                            <div class="cert-details">
+
+                                <div class="cert-details">
                                 <h3>Certified Eng Learner</h3>
-                                <p>Recognition for expertise in modern web technologies, including HTML, CSS,
-                                    JavaScript, and responsive design.</p>
-                                <a href="https://certification-link.com" target="_blank" id="cert-target">Visit
-                                    Websites</a>
+                                <p>Recognition for expertise in modern web technologies, including HTML, CSS,JavaScript, and responsive design.</p>
+                                <a href="https://certification-link.com" target="_blank" id="cert-target">Visit Websites</a>
+                            </div>
                             </div>
                         </div>
-                        <!-- ----------------------------------------------------------------------------- -->
-                        <!-- Certification PAGE 03 -->
-                        <div class="certification-box">
-                            <div class="overlay"></div>
-                            <div class="cert-image" onclick="zoomImage(this)">
-                                <img src="images/cert-eng.jpg" alt="Eng Course Certificate">
-                            </div>
-                            <div class="cert-details">
-                                <h3>Certified Eng Learner</h3>
-                                <p>Recognition for expertise in modern web technologies, including HTML, CSS,
-                                    JavaScript, and responsive design.</p>
-                                <a href="https://certification-link.com" target="_blank" id="cert-target">Visit
-                                    Websites</a>
-                            </div>
+
+                        <!------------------------------>
+                        <!-- CERTIFICATION NAVIGATION -->
+                        <!------------------------------>
                         </div>
-                        <!-- ----------------------------------------------------------------------------- -->
-                        <!-- SO ON....................................................................... -->
                         <div class="cert-nav">
                             <button class="prev-btn" onclick="changeCertificate(-1)">❮</button>
                             <span id="page-indicator">Page 1 of 3</span>
@@ -260,7 +265,7 @@
     <footer>
         <div class="footer-container">
             <div class="footer-brand ">
-                <img src="images/profile_logo.png" alt="Brand Icon">
+                <img src="images/profile-logo.png" alt="Brand Icon">
                 <h3>Sohel Chaus</h3>
             </div>
 
