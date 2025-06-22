@@ -719,9 +719,121 @@
     font-family: "Bungee", sans-serif;
 }
 
-/* ----------------------------MAIN END------------------------------ */
-/* ____________________________________________________________________ */
+
+/* --------------- */
+/* PROJECT SECTION */
+/* --------------- */
+.project-section-title {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    font-family: monospace;
+    font-size: clamp(0.8rem, 1vw + 0.5rem, 1rem);
+    width: 100%;
+    max-width: 1400px;
+    margin-top: 3rem;
+    padding: 0 ;
+}
+
+.project-section-title p {
+    position: relative;
+    font-size: clamp(1.5rem, 2vw + 1rem, 2.5rem);
+    margin-top: -10px;
+    word-spacing: 5px;
+}
+
+#project-section-paragraph {
+    color: #00FF1A;
+    font-family: "Bungee", sans-serif;
+}
+
+#projects {
+    display: flex;
+}
+
+.projects-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+.projects-sub-container {
+    background-color: #939393;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #939393;
+    width: calc(33% - 2rem);
+    margin: 1rem;
+    border-radius: 1rem;
+}
+/* ----------- */
+/* PROJECT BOX */
+/* ----------- */
+.project-box {
+    background-color: #939393;
+    padding: 2rem 5rem;
+    border-radius: 1rem;
+    margin: 2rem;
+}
+.project-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+    gap: 1rem;
+}
+.project-logo {
+    width: 2rem;
+    height: 2rem;
+    object-fit: contain;
+}
+.project-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    white-space: nowrap;
+    margin-top: -2rem;
+}
+.project-image {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+}
+.base-image {
+    width: 20rem;
+    height: auto;
+    border-radius: 0.5rem;
+}
+.overlay-image {
+    position: absolute;
+    width: 5rem;
+    bottom: -3rem;
+    right: -4rem;
+    box-shadow: 0 0.5rem 1rem black;
+    border-radius: 0.5rem;
+}
+/* --------------- */
+/* PROJECT DETAILS */
+/* --------------- */
+.project-detail {
+    background-color: #202020;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    padding: 0 2rem;
+    border-radius: 1rem;
+}
+/*____________________________________________________________________________________________________________________________________________ */
+
+/* -------------- */
 /* FOOTER SECTION */
+/* -------------- */
 footer {
     background: #1C1C1C;
     color: white;
