@@ -1,5 +1,14 @@
-// Navigation - Bar
+// MENU BAR
+  const toggleBtn = document.getElementById("menu-toggle");
+  const navLinks = document.querySelector(".nav-links");
 
+  toggleBtn.addEventListener("click", () => {
+    navLinks.classList.toggle("open");
+
+    // Optional icon swap
+    toggleBtn.classList.toggle("fa-bars");
+    toggleBtn.classList.toggle("fa-xmark");
+  });
 
 
 const tabs = document.querySelectorAll('nav ul li a');

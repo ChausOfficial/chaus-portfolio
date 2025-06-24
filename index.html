@@ -18,21 +18,26 @@
     <!-- --------------------------------- -->
     <header>
         <nav class="header-container">
-            <ul>
-                <img src="images/profile-logo.png" alt="logo image">
-                <h1><span id="header-title">PORT</span>Folio</h1>
-            </ul>
-            <ul>
+            <!-- Menu Icon For Mobile -->
+            <i class="fa-solid fa-bars" id="menu-toggle"></i>
+
+            <!-- Branding -->
+            <div class="branding">
+                <img src="images/profile-logo.png" alt="brand image">
+                <h1><span id="branding-title">PORT</span>Folio</h1>
+            </div>
+
+            <!-- Main Navigation -->
+            <ul class="nav-links" id="nav-links">
                 <li><a href="home.html">Home</a></li>
                 <li><a href="ervices.html">Services</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="portfolio.html">Portfolio</a></li>
-            </ul>
-            <ul>
                 <li><a href="contact.html" class="contact-button">Contact</a></li>
             </ul>
         </nav>
     </header>
+
 
     <!-- --------------------------------- -->
     <!-- ========== MAIN SECTION ========= -->
@@ -163,16 +168,16 @@
                     <div class="tab-content active" id="education">
                         <h2>Education</h2>
                         <div class="ed-container">
-                        <div class="ed-dt">
-                            <p><span>Degree:</span> Bachelor’s In Computer Applications (BCA)</p>
-                            <p><span>Field:</span> Computer Science</p>
-                            <p><span>College:</span> Yeshwant College of Information Technology (YCIT)</p>
-                            <p><span>Duration:</span> 2023-2025</p>
-                        </div>
+                            <div class="ed-dt">
+                                <p><span>Degree:</span> Bachelor’s In Computer Applications (BCA)</p>
+                                <p><span>Field:</span> Computer Science</p>
+                                <p><span>College:</span> Yeshwant College of Information Technology (YCIT)</p>
+                                <p><span>Duration:</span> 2023-2025</p>
+                            </div>
 
-                        <div class="ed-bg">
-                            <img src="images/college-bg.jpg" alt="college image">
-                        </div>
+                            <div class="ed-bg">
+                                <img src="images/college-bg.jpg" alt="college image">
+                            </div>
                         </div>
                     </div>
 
@@ -197,57 +202,63 @@
                         <h2>Certificates</h2>
                         <div class="certification-container">
 
-                        <!-------------------->
-                        <!-- Certificate 01 -->
-                        <!-------------------->
-                        <div class="certification-box active">
-                            <div class="overlay"></div>
-                            <div class="cert-image" onclick="zoomImage(this)">
-                                <img src="images/CFT-WebDesign.jpg" alt="Web Design Certificate">
+                            <!-------------------->
+                            <!-- Certificate 01 -->
+                            <!-------------------->
+                            <div class="certification-box active">
+                                <div class="overlay"></div>
+                                <div class="cert-image" onclick="zoomImage(this)">
+                                    <img src="images/CFT-WebDesign.jpg" alt="Web Design Certificate">
 
-                                <div class="cert-details">
-                                <h3>Certified Web Designer</h3>
-                                <p>Recognition for expertise in modern web technologies, including HTML, CSS, JavaScript, and responsive design.</p>
-                                <a href="https://certification-link.com" target="_blank" id="cert-target">Visit Websites</a>
+                                    <div class="cert-details">
+                                        <h3>Certified Web Designer</h3>
+                                        <p>Recognition for expertise in modern web technologies, including HTML, CSS,
+                                            JavaScript, and responsive design.</p>
+                                        <a href="https://certification-link.com" target="_blank" id="cert-target">Visit
+                                            Websites</a>
+                                    </div>
+                                </div>
                             </div>
+
+                            <!-------------------->
+                            <!-- Certificate 02 -->
+                            <!-------------------->
+                            <div class="certification-box">
+                                <div class="overlay"></div>
+                                <div class="cert-image" onclick="zoomImage(this)">
+                                    <img src="images/CFT-Eng.jpg" alt="Eng Course Certificate">
+
+                                    <div class="cert-details">
+                                        <h3>Certified Eng Learner</h3>
+                                        <p>Recognition for expertise in modern web technologies, including HTML, CSS,
+                                            JavaScript, and responsive design.</p>
+                                        <a href="https://certification-link.com" target="_blank" id="cert-target">Visit
+                                            Websites</a>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
 
-                        <!-------------------->
-                        <!-- Certificate 02 -->
-                        <!-------------------->
-                        <div class="certification-box">
-                            <div class="overlay"></div>
-                            <div class="cert-image" onclick="zoomImage(this)">
-                                <img src="images/CFT-Eng.jpg" alt="Eng Course Certificate">
+                            <!-------------------->
+                            <!-- Certificate 03 -->
+                            <!-------------------->
+                            <div class="certification-box">
+                                <div class="overlay"></div>
+                                <div class="cert-image" onclick="zoomImage(this)">
+                                    <img src="images/cert-eng.jpg" alt="Eng Course Certificate">
 
-                                <div class="cert-details">
-                                <h3>Certified Eng Learner</h3>
-                                <p>Recognition for expertise in modern web technologies, including HTML, CSS, JavaScript, and responsive design.</p>
-                                <a href="https://certification-link.com" target="_blank" id="cert-target">Visit Websites</a>
+                                    <div class="cert-details">
+                                        <h3>Certified Eng Learner</h3>
+                                        <p>Recognition for expertise in modern web technologies, including HTML,
+                                            CSS,JavaScript, and responsive design.</p>
+                                        <a href="https://certification-link.com" target="_blank" id="cert-target">Visit
+                                            Websites</a>
+                                    </div>
+                                </div>
                             </div>
-                            </div>  
-                        </div>
 
-                        <!-------------------->
-                        <!-- Certificate 03 -->
-                        <!-------------------->
-                        <div class="certification-box">
-                            <div class="overlay"></div>
-                            <div class="cert-image" onclick="zoomImage(this)">
-                                <img src="images/cert-eng.jpg" alt="Eng Course Certificate">
-
-                                <div class="cert-details">
-                                <h3>Certified Eng Learner</h3>
-                                <p>Recognition for expertise in modern web technologies, including HTML, CSS,JavaScript, and responsive design.</p>
-                                <a href="https://certification-link.com" target="_blank" id="cert-target">Visit Websites</a>
-                            </div>
-                            </div>
-                        </div>
-
-                        <!------------------------------>
-                        <!-- CERTIFICATION NAVIGATION -->
-                        <!------------------------------>
+                            <!------------------------------>
+                            <!-- CERTIFICATION NAVIGATION -->
+                            <!------------------------------>
                         </div>
                         <div class="cert-nav">
                             <button class="prev-btn" onclick="changeCertificate(-1)">❮</button>
@@ -273,120 +284,120 @@
                 <!-- 01 PROJECT BOX -->
                 <!-------------------->
                 <div class="projects-sub-container">
-                <div class="project-box">
-                    <div class="project-title">
-                        <img src="images/profile-logo.png" alt="Project Name" class="project-logo">
-                        <span class="project-name">Sohel Chaus</span>
+                    <div class="project-box">
+                        <div class="project-title">
+                            <img src="images/profile-logo.png" alt="Project Name" class="project-logo">
+                            <span class="project-name">Sohel Chaus</span>
+                        </div>
+                        <div class="project-image">
+                            <img src="images/desktop-view.jpg" alt="desktop view" class="base-image">
+                            <img src="images/mobile-view.jpg" alt="mobile view" class="overlay-image">
+                        </div>
                     </div>
-                    <div class="project-image">
-                        <img src="images/desktop-view.jpg" alt="desktop view" class="base-image">
-                        <img src="images/mobile-view.jpg" alt="mobile view" class="overlay-image">
+                    <div class="project-detail">
+                        <h1>Project Title</h1>
+                        <p>Project Description</p>
                     </div>
-                </div>
-                <div class="project-detail">
-                    <h1>Project Title</h1>
-                    <p>Project Description</p>
-                </div>
                 </div>
 
                 <!-------------------->
                 <!-- 02 PROJECT BOX -->
                 <!-------------------->
                 <div class="projects-sub-container">
-                <div class="project-box">
-                    <div class="project-title">
-                        <img src="images/profile-logo.png" alt="Project Name" class="project-logo">
-                        <span class="project-name">Sohel Chaus</span>
+                    <div class="project-box">
+                        <div class="project-title">
+                            <img src="images/profile-logo.png" alt="Project Name" class="project-logo">
+                            <span class="project-name">Sohel Chaus</span>
+                        </div>
+                        <div class="project-image">
+                            <img src="images/desktop-view.jpg" alt="desktop view" class="base-image">
+                            <img src="images/mobile-view.jpg" alt="mobile view" class="overlay-image">
+                        </div>
                     </div>
-                    <div class="project-image">
-                        <img src="images/desktop-view.jpg" alt="desktop view" class="base-image">
-                        <img src="images/mobile-view.jpg" alt="mobile view" class="overlay-image">
+                    <div class="project-detail">
+                        <h1>Project Title</h1>
+                        <p>Project Description</p>
                     </div>
-                </div>
-                <div class="project-detail">
-                    <h1>Project Title</h1>
-                    <p>Project Description</p>
-                </div>
                 </div>
 
                 <!-------------------->
                 <!-- 03 PROJECT BOX -->
                 <!-------------------->
                 <div class="projects-sub-container">
-                <div class="project-box">
-                    <div class="project-title">
-                        <img src="images/profile-logo.png" alt="Project Name" class="project-logo">
-                        <span class="project-name">Sohel Chaus</span>
+                    <div class="project-box">
+                        <div class="project-title">
+                            <img src="images/profile-logo.png" alt="Project Name" class="project-logo">
+                            <span class="project-name">Sohel Chaus</span>
+                        </div>
+                        <div class="project-image">
+                            <img src="images/desktop-view.jpg" alt="desktop view" class="base-image">
+                            <img src="images/mobile-view.jpg" alt="mobile view" class="overlay-image">
+                        </div>
                     </div>
-                    <div class="project-image">
-                        <img src="images/desktop-view.jpg" alt="desktop view" class="base-image">
-                        <img src="images/mobile-view.jpg" alt="mobile view" class="overlay-image">
+                    <div class="project-detail">
+                        <h1>Project Title</h1>
+                        <p>Project Description</p>
                     </div>
-                </div>
-                <div class="project-detail">
-                    <h1>Project Title</h1>
-                    <p>Project Description</p>
-                </div>
                 </div>
 
                 <!-------------------->
                 <!-- 04 PROJECT BOX -->
                 <!-------------------->
                 <div class="projects-sub-container">
-                <div class="project-box">
-                    <div class="project-title">
-                        <img src="images/profile-logo.png" alt="Project Name" class="project-logo">
-                        <span class="project-name">Sohel Chaus</span>
+                    <div class="project-box">
+                        <div class="project-title">
+                            <img src="images/profile-logo.png" alt="Project Name" class="project-logo">
+                            <span class="project-name">Sohel Chaus</span>
+                        </div>
+                        <div class="project-image">
+                            <img src="images/desktop-view.jpg" alt="desktop view" class="base-image">
+                            <img src="images/mobile-view.jpg" alt="mobile view" class="overlay-image">
+                        </div>
                     </div>
-                    <div class="project-image">
-                        <img src="images/desktop-view.jpg" alt="desktop view" class="base-image">
-                        <img src="images/mobile-view.jpg" alt="mobile view" class="overlay-image">
+                    <div class="project-detail">
+                        <h1>Project Title</h1>
+                        <p>Project Description</p>
                     </div>
-                </div>
-                <div class="project-detail">
-                    <h1>Project Title</h1>
-                    <p>Project Description</p>
-                </div>
                 </div>
 
                 <!-------------------->
                 <!-- 05 PROJECT BOX -->
                 <!-------------------->
                 <div class="projects-sub-container">
-                <div class="project-box">
-                    <div class="project-title">
-                        <img src="images/profile-logo.png" alt="Project Name" class="project-logo">
-                        <span class="project-name">Sohel Chaus</span>
+                    <div class="project-box">
+                        <div class="project-title">
+                            <img src="images/profile-logo.png" alt="Project Name" class="project-logo">
+                            <span class="project-name">Sohel Chaus</span>
+                        </div>
+                        <div class="project-image">
+                            <img src="images/desktop-view.jpg" alt="desktop view" class="base-image">
+                            <img src="images/mobile-view.jpg" alt="mobile view" class="overlay-image">
+                        </div>
                     </div>
-                    <div class="project-image">
-                        <img src="images/desktop-view.jpg" alt="desktop view" class="base-image">
-                        <img src="images/mobile-view.jpg" alt="mobile view" class="overlay-image">
+                    <div class="project-detail">
+                        <h1>Project Title</h1>
+                        <p>Project Description</p>
                     </div>
-                </div>
-                <div class="project-detail">
-                    <h1>Project Title</h1>
-                    <p>Project Description</p>
-                </div>
                 </div>
 
                 <!-------------------->
                 <!-- 06 PROJECT BOX -->
                 <!-------------------->
                 <div class="projects-sub-container">
-                <div class="project-box">
-                    <div class="project-title">
-                        <img src="images/profile-logo.png" alt="Project Name" class="project-logo">
-                        <span class="project-name">Sohel Chaus</span>
+                    <div class="project-box">
+                        <div class="project-title">
+                            <img src="images/profile-logo.png" alt="Project Name" class="project-logo">
+                            <span class="project-name">Sohel Chaus</span>
+                        </div>
+                        <div class="project-image">
+                            <img src="images/desktop-view.jpg" alt="desktop view" class="base-image">
+                            <img src="images/mobile-view.jpg" alt="mobile view" class="overlay-image">
+                        </div>
                     </div>
-                    <div class="project-image">
-                        <img src="images/desktop-view.jpg" alt="desktop view" class="base-image">
-                        <img src="images/mobile-view.jpg" alt="mobile view" class="overlay-image">
+                    <div class="project-detail">
+                        <h1>Project Title</h1>
+                        <p>Project Description</p>
                     </div>
-                </div>
-                <div class="project-detail">
-                    <h1>Project Title</h1>
-                    <p>Project Description</p>
-                </div>
                 </div>
             </div>
         </section>
@@ -441,4 +452,4 @@
     <script src="js/home-script.js" defer></script>
 </body>
 
-</html>
+`

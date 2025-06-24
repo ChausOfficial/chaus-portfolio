@@ -9,7 +9,7 @@
     font-family: monospace;
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 100vw;
     overflow-x: hidden;
     margin: 0;
     padding: 0;
@@ -17,7 +17,7 @@
 
 /* HEADER SECTION */
 .header {
-    width: 100%;
+    width: 100vw;
     display: flex;
     flex-direction: row;
     margin: 0;
@@ -28,36 +28,60 @@
     color: #fff;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    position: relative;
     justify-content: space-between;
     align-items: center;
     padding: 0 2rem;
 }
-.header-container ul {
+/* ------------------- */
+/* MENU BAR FOR MOBILE */
+/* ------------------- */
+.header-container i {
+  display: none;
+  font-size: 1.8rem;
+  color: #00ff1a;
+  cursor: pointer;
+}
+
+/* -------- */
+/* BRANDING */
+/* -------- */
+.branding {
     display: flex;
-    justify-content: center;
+    align-items: center;
+}
+.branding img {
+    width: 2rem;
+    height: 2rem;
+    margin-right: 1rem;
+}
+.branding h1 {
+    color: white;
+    font-size: clamp(0.8rem, 1vw + 0.5rem, 1.5rem);
+    font-weight: bold;
+}
+#branding-title {
+    color: #00FF1A;
+}
+
+/* -------------- */
+/* NAVIGATION BAR */
+/* -------------- */
+.nav-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     align-items: center;
     list-style-type: none;
     margin: 0;
     padding: 0;
 }
-.header-container ul img {
-    width: 2rem;
-    height: 2rem;
-    margin-right: 1rem;
-}
-.header-container ul h1 {
-    color: white;
-    font-size: clamp(0.8rem, 1vw + 0.5rem, 1.5rem);
-    font-weight: bold;
-}
-#header-title {
-    color: #00FF1A;
-}
-.header-container ul li {
+.nav-links li {
     margin: 0 1rem;
 }
 
-.header-container ul li a {
+.nav-links li a {
     color: white;
     font-size: clamp(0.6rem, 0.8vw + 0.4rem, 1rem);
     padding: 0.5rem 1rem;
@@ -66,19 +90,23 @@
     text-decoration: none;
 }
 
-/* navigation hover effect */
+/* ----------------------------- */
+/* NAVIGATION BAR - EFFECT */
+/* ----------------------------- */
 .header-container ul li a:hover,
 .header-container ul li a:focus {
     background-color: #00FF1A;
     color: #1C1C1C;
     text-decoration: none;
 }
-
-/* navigation double-click effect */
 .header-container ul li a:active {
     background-color: #FF8C00;
     color: #1C1C1C;
 }
+
+/* -------------- */
+/* CONTACT BUTTON */
+/* -------------- */
 .contact-button {
     background-color: #00FF1A;
     color: #1C1C1C;
@@ -114,8 +142,7 @@
     position: relative;
     margin: 0;
     padding: 0;
-    gap: 50px;
-    width: 100%;
+    width: 100vw;
 }
 
 /* Left Side - INTRO CONTAINER */
@@ -128,8 +155,9 @@
     position: relative;
     text-align: left;
     padding-top: -10%;
+    margin-left: 2rem;
     top: 10%;
-    width: 50%;
+    width: 50vw;
 }
 
 .social-links {
@@ -189,7 +217,7 @@
     justify-content: center;
     align-items: center;
     position: relative;
-    width: 50%;
+    width: 50vw;
     height: auto;
     overflow: hidden;
 }
