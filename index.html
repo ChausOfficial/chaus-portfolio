@@ -38,6 +38,7 @@
         </nav>
     </header>
 
+    
 
     <!-- --------------------------------- -->
     <!-- ========== MAIN SECTION ========= -->
@@ -153,38 +154,19 @@
                     <!-- TAB BAR -->
                     <!------------->
                     <div class="tabs">
-                        <button class="tab-link active" onclick="openTab(event, 'education')">Education</button>
-                        <button class="tab-link" onclick="openTab(event, 'skills')">Skills</button>
+                        <button class="tab-link active" onclick="openTab(event, 'skills')">Skills</button>
                         <button class="tab-link" onclick="openTab(event, 'certification')">Certification</button>
+                        <button class="tab-link" onclick="openTab(event, 'education')">Education</button>
                     </div>
 
                     <!----------------->
                     <!-- TAB CONTENT -->
                     <!----------------->
 
-                    <!----------------------------->
-                    <!-- EDUCATION / TAB CONTENT -->
-                    <!----------------------------->
-                    <div class="tab-content active" id="education">
-                        <h2>Education</h2>
-                        <div class="ed-container">
-                            <div class="ed-dt">
-                                <p><span>Degree:</span> Bachelor’s In Computer Applications (BCA)</p>
-                                <p><span>Field:</span> Computer Science</p>
-                                <p><span>College:</span> Yeshwant College of Information Technology (YCIT)</p>
-                                <p><span>Duration:</span> 2023-2025</p>
-                            </div>
-
-                            <div class="ed-bg">
-                                <img src="images/college-bg.jpg" alt="college image">
-                            </div>
-                        </div>
-                    </div>
-
                     <!-- ----------------------->
                     <!-- SKILLS / TAB CONTENT -->
                     <!-- ----------------------->
-                    <div class="tab-content" id="skills">
+                    <div class="tab-content active" id="skills">
                         <h2>Skills</h2>
                         <ul class="skills-list">
                             <li><i class="fab fa-html5"></i><span>HTML</span></li>
@@ -208,12 +190,11 @@
                             <div class="certification-box active">
                                 <div class="overlay"></div>
                                 <div class="cert-image" onclick="zoomImage(this)">
-                                    <img src="images/CFT-WebDesign.jpg" alt="Web Design Certificate">
+                                    <img src="images/cft-01.jpg" alt="Web Design Certificate">
 
                                     <div class="cert-details">
-                                        <h3>Certified Web Designer</h3>
-                                        <p>Recognition for expertise in modern web technologies, including HTML, CSS,
-                                            JavaScript, and responsive design.</p>
+                                        <h3>Project Management Certificate</h3>
+                                        <p>Successfully completed LinkedIn Learning’s Project Management course—gaining practical strategies to lead, plan, and deliver projects with confidence and clarity.</p>
                                         <a href="https://certification-link.com" target="_blank" id="cert-target">Visit
                                             Websites</a>
                                     </div>
@@ -226,12 +207,11 @@
                             <div class="certification-box">
                                 <div class="overlay"></div>
                                 <div class="cert-image" onclick="zoomImage(this)">
-                                    <img src="images/CFT-Eng.jpg" alt="Eng Course Certificate">
+                                    <img src="images/cft-02.jpg" alt="Eng Course Certificate">
 
                                     <div class="cert-details">
-                                        <h3>Certified Eng Learner</h3>
-                                        <p>Recognition for expertise in modern web technologies, including HTML, CSS,
-                                            JavaScript, and responsive design.</p>
+                                        <h3>Basic CSS Certificate</h3>
+                                        <p>Completed Simplilearn’s Basic CSS course—gaining hands-on skills in styling, layout, and responsive design to build visually engaging web pages.</p>
                                         <a href="https://certification-link.com" target="_blank" id="cert-target">Visit
                                             Websites</a>
                                     </div>
@@ -244,12 +224,28 @@
                             <div class="certification-box">
                                 <div class="overlay"></div>
                                 <div class="cert-image" onclick="zoomImage(this)">
-                                    <img src="images/cert-eng.jpg" alt="Eng Course Certificate">
+                                    <img src="images/cft-03.jpg" alt="Eng Course Certificate">
 
                                     <div class="cert-details">
-                                        <h3>Certified Eng Learner</h3>
-                                        <p>Recognition for expertise in modern web technologies, including HTML,
-                                            CSS,JavaScript, and responsive design.</p>
+                                        <h3>Web Design Certificate</h3>
+                                        <p>Completed Skill India's Basic Web Design & Development course—building a strong foundation in HTML, CSS, and website structure to create functional, user-friendly web pages.</p>
+                                        <a href="https://certification-link.com" target="_blank" id="cert-target">Visit
+                                            Websites</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-------------------->
+                            <!-- Certificate 04 -->
+                            <!-------------------->
+                            <div class="certification-box">
+                                <div class="overlay"></div>
+                                <div class="cert-image" onclick="zoomImage(this)">
+                                    <img src="images/cft-04.jpg" alt="Eng Course Certificate">
+
+                                    <div class="cert-details">
+                                        <h3>Basic Eng Certificate</h3>
+                                        <p>Completed Skill India's Basic Introduction to English course—building essential language skills for effective communication in everyday and professional contexts.</p>
                                         <a href="https://certification-link.com" target="_blank" id="cert-target">Visit
                                             Websites</a>
                                     </div>
@@ -264,6 +260,25 @@
                             <button class="prev-btn" onclick="changeCertificate(-1)">❮</button>
                             <span id="page-indicator">Page 1 of 3</span>
                             <button class="next-btn" onclick="changeCertificate(1)">❯</button>
+                        </div>
+                    </div>
+
+                    <!----------------------------->
+                    <!-- EDUCATION / TAB CONTENT -->
+                    <!----------------------------->
+                    <div class="tab-content" id="education">
+                        <h2>Education</h2>
+                        <div class="ed-container">
+                            <div class="ed-dt">
+                                <p><span>Degree:</span> Bachelor’s In Computer Applications (BCA)</p>
+                                <p><span>Field:</span> Computer Science</p>
+                                <p><span>College:</span> Yeshwant College of Information Technology (YCIT)</p>
+                                <p><span>Duration:</span> 2023-2025</p>
+                            </div>
+
+                            <div class="ed-bg">
+                                <img src="images/college-bg.jpg" alt="college image">
+                            </div>
                         </div>
                     </div>
                 </div>
